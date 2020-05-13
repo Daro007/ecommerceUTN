@@ -1,0 +1,263 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+}
+.on {
+  display: block;
+}
+.off {
+  display: none;
+}
+.alertCarrito {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#logo {
+  width: 100%;
+}
+.parrafo {
+  margin: 0.5em;
+}
+
+.fotoUsuario {
+  max-width: 200px;
+  max-height: 230px;
+  object-fit: cover;
+  margin-top: 1em;
+}
+.miPerfil {
+  text-align: center;
+  margin: 0em auto;
+  font-family: "Josefin Sans";
+}
+.dataMiPerfil {
+  margin-top: 3em;
+}
+span {
+  font-weight: bold;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 3em;
+  position: initial;
+  bottom: 0em;
+  left: 0em;
+}
+
+.icons {
+  padding: 0em 1em;
+  color: #fff;
+}
+.icons:hover {
+  color: #292b2c;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.btn-agregar,
+.btn-verPerfil {
+  margin: 0em;
+  padding: 0.75em 1.25em;
+  background-color: #bc2036;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  border: none;
+  font-weight: bold;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.btn-agregar:hover,
+.btn-verPerfil:hover {
+  cursor: pointer;
+  background-color: #ff3e41;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.noAniadido {
+  display: none;
+  color: #06a77d;
+}
+.aniadido {
+  color: #06a77d;
+}
+.linkUsuario {
+  color: #ffffff;
+  text-decoration: none;
+}
+.linkUsuario:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.perfil {
+  /* display: flex; */
+  padding: 1em;
+  min-height: 100px;
+  width: 75%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 1em 3em;
+  font-family: "Josefin Sans";
+}
+.datosPersona {
+  padding: 0em 1em;
+}
+span {
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+}
+.imgPerfil {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.subtitulo {
+  font-size: 1em;
+}
+.brand {
+  font-size: 0.75em;
+}
+.paymentCard {
+  /* margin-top: 1em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.card {
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
+  margin: 0 auto;
+}
+.totalPayment {
+  margin: 0 auto;
+  width: 75vw;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .appHeader {
+    max-width: 1000px;
+    margin: 0em auto;
+  }
+  .fotoUsuario {
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 730px;
+  }
+  .miPerfil {
+    margin: 0em auto;
+    max-width: 1000px;
+    font-size: 1.5rem;
+  }
+  .perfil {
+    display: flex;
+    margin: 2em auto;
+    padding: 1.5em;
+  }
+  .footer {
+    padding: 1em;
+    font-size: 1.125rem;
+    height: 5.5em;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    /* margin-top: 3em; */
+    position: absolute;
+    bottom: 0;
+  }
+  #content-wrap {
+    padding-bottom: 8em;
+  }
+  .btn-agregar {
+    font-size: 1.125rem;
+  }
+  .alertLogin {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+  }
+  .contenedor-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .subtitulo {
+    font-size: 1.75em;
+  }
+  .brand {
+    font-size: 1.125em;
+  }
+  .carritoNav {
+    font-size: 1.25em;
+  }
+  .alertCarrito {
+    width: 50%;
+    font-size: 1.25em;
+  }
+  .card {
+    width: 500px;
+    min-height: 60vh;
+  }
+  .totalPayment {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: end;
+  }
+}
+
+/* LOADING */
+
+.lds-ring {
+  display: inline-block;
+  position: fixed;
+  bottom: 50%;
+  left: 47%;
+  top: 40%;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #bc2036 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
